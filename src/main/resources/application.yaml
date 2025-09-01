@@ -1,0 +1,27 @@
+server:
+  port: 8082
+  address: 127.0.0.1
+  servlet:
+    context-path: /api/v1
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//127.0.0.1:1521/XEPDB1
+    username: razorpay
+    password: razorpay_2025
+    driver-class-name: oracle.jdbc.OracleDriver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: payment-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://125.20.102.86:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    ip-address: 100.100.7.38
