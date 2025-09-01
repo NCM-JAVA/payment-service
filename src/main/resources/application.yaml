@@ -25,3 +25,8 @@ eureka:
   instance:
     prefer-ip-address: true
     ip-address: 100.100.7.38
+
+razorpay:
+  properties:
+    key-id: rzp_test_mQ3zKsSLwAIjSp
+    key-secrete: y4yOkuwDQWCQvPL7tiYHm2xU
