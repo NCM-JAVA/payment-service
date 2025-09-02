@@ -30,3 +30,9 @@ razorpay:
   properties:
     key-id: rzp_test_mQ3zKsSLwAIjSp
     key-secrete: y4yOkuwDQWCQvPL7tiYHm2xU
+jwt:
+  properties:
+    secrete-key: mysecretkey
+    token-validity: 60000
+    token-header: Authorization
+    token-prefix: Bearer
