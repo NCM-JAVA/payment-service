@@ -5,10 +5,12 @@ import com.razorpay.exception.CustomException;
 import io.jsonwebtoken.*;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.stereotype.Component;
 
 import java.util.Date;
 import java.util.List;
 
+@Component
 public class JwtUtil {
     private final JwtParser jwtParser;
     private final JwtProperties jwtProperties;
